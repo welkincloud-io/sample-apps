@@ -7,7 +7,7 @@ This is examples of using python code to connect to Welkin's v8 APIs.
 You can access Welkin V8 API documentation.
 [Welkin V8 Documentation](https://developers.welkinhealth.com/ "Welkin V8 Documentation")
 
-
+---
 ### Initial Setup
 
 
@@ -22,7 +22,7 @@ Reminder: Security Policies and Roles are defined in the Designer and assigned i
 
 For this example we will assume Client Name is **VBOPNRYRWJIP** and Secret Key is **+}B{KGTG6#zG%P;tQm0C**
 
-
+---
 ### Configuration
 
 **There is draft_config.json file should be used in  designer 'create draft' configuration**
@@ -46,7 +46,7 @@ In order to Authenticate in Welkin, client name, secret required.
 5.  Fifth varible is ENV which will represent testing or live environments. 
     It's Value will be **stg** or **live**. 
     
-___
+---
 
 ### Using this Repo
 1. set values in config.py file
