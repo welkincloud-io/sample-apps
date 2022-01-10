@@ -1,16 +1,16 @@
----
+
 ## Welkin's V8 API Usage in python
 
----
+
 This is examples of using python code to connect to Welkin's v8 APIs.
 
 You can access Welkin V8 API documentation.
 [Welkin V8 Documentation](https://developers.welkinhealth.com/ "Welkin V8 Documentation")
 
----
+
 ### Initial Setup
 
----
+
 #### Creating API Client
 1. Create API client in your Organization
 Navigate to Admin -> API Clients -> Create Client
@@ -22,9 +22,9 @@ Reminder: Security Policies and Roles are defined in the Designer and assigned i
 
 For this example we will assume Client Name is **VBOPNRYRWJIP** and Secret Key is **+}B{KGTG6#zG%P;tQm0C**
 
-***
+
 ### Configuration
-***
+
 **There is draft_config.json file should be used in  designer 'create draft' configuration**
 
 Once you finished the steps, there are several variables in URL structure we need to setup before using this Repo.
@@ -48,8 +48,7 @@ In order to Authenticate in Welkin, client name, secret required.
     
 ___
 
-###Using this Repo
-___
+### Using this Repo
 1. set values in config.py file
 2. Generate token by running /utils/generate_token.py file.
 3. Run Scripts by following instruction provided in docstring. There is Json file with
