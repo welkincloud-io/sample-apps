@@ -1,0 +1,4719 @@
+{
+	"securityFormation": {
+		"securityPolicies": [
+			{
+				"id": "e11f3f05-8928-491e-a2ee-468fd796cfb6",
+				"name": "sp-admin",
+				"description": "",
+				"services": [
+					{
+						"serviceName": "cdt-vitals",
+						"operations": [
+							{
+								"operationName": "read",
+								"fieldProjections": [
+									{
+										"name": "cdtf-blood-pressure"
+									},
+									{
+										"name": "cdtf-heart-rate"
+									},
+									{
+										"name": "cdtf-temperature"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "read_masked",
+								"fieldProjections": [
+									{
+										"name": "cdtf-blood-pressure"
+									},
+									{
+										"name": "cdtf-heart-rate"
+									},
+									{
+										"name": "cdtf-temperature"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "update",
+								"fieldProjections": [
+									{
+										"name": "cdtf-blood-pressure"
+									},
+									{
+										"name": "cdtf-heart-rate"
+									},
+									{
+										"name": "cdtf-temperature"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "create",
+								"fieldProjections": [
+									{
+										"name": "cdtf-blood-pressure"
+									},
+									{
+										"name": "cdtf-heart-rate"
+									},
+									{
+										"name": "cdtf-temperature"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "delete",
+								"fieldProjections": [
+									{
+										"name": "cdtf-blood-pressure"
+									},
+									{
+										"name": "cdtf-heart-rate"
+									},
+									{
+										"name": "cdtf-temperature"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"internalCdts": [
+					{
+						"name": "doc-type-assessment",
+						"operations": [
+							{
+								"operationName": "read",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "read_masked",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "doc-type-docusign",
+						"operations": [
+							{
+								"operationName": "read",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "read_masked",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "doc-type-others",
+						"operations": [
+							{
+								"operationName": "read",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "read_masked",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "__encounter_disposition__",
+						"operations": [
+							{
+								"operationName": "read",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							},
+							{
+								"operationName": "read_masked",
+								"fields": [
+									{
+										"name": "notes"
+									},
+									{
+										"name": "id"
+									},
+									{
+										"name": "created_at"
+									},
+									{
+										"name": "created_by"
+									},
+									{
+										"name": "created_by_name"
+									},
+									{
+										"name": "updated_at"
+									},
+									{
+										"name": "updated_by"
+									},
+									{
+										"name": "updated_by_name"
+									},
+									{
+										"name": "source_name"
+									},
+									{
+										"name": "source_type"
+									},
+									{
+										"name": "source_id"
+									},
+									{
+										"name": "external_id"
+									},
+									{
+										"name": "external_guid"
+									}
+								]
+							}
+						]
+					}
+				],
+				"profileDataTypes": [],
+				"assessments": [],
+				"dictionaries": [
+					{
+						"name": "cpt",
+						"operations": [
+							{
+								"operationName": "create"
+							},
+							{
+								"operationName": "read"
+							},
+							{
+								"operationName": "update"
+							},
+							{
+								"operationName": "delete"
+							}
+						]
+					},
+					{
+						"name": "icd-10",
+						"operations": [
+							{
+								"operationName": "create"
+							},
+							{
+								"operationName": "read"
+							},
+							{
+								"operationName": "update"
+							},
+							{
+								"operationName": "delete"
+							}
+						]
+					},
+					{
+						"name": "timezone",
+						"operations": [
+							{
+								"operationName": "read"
+							}
+						]
+					}
+				],
+				"programs": [
+					{
+						"name": "prog-sample",
+						"operations": [
+							{
+								"operationName": "read"
+							},
+							{
+								"operationName": "assign"
+							},
+							{
+								"operationName": "update"
+							},
+							{
+								"operationName": "changePhase"
+							},
+							{
+								"operationName": "delete"
+							}
+						]
+					}
+				],
+				"encounterPolicy": {
+					"operations": [
+						{
+							"operationName": "read"
+						},
+						{
+							"operationName": "createUpdateDelete"
+						},
+						{
+							"operationName": "finalize"
+						},
+						{
+							"operationName": "updateFinalized"
+						},
+						{
+							"operationName": "updateOpenFinalizedCalendarEvent"
+						},
+						{
+							"operationName": "updateFinalizedDisposition"
+						}
+					]
+				},
+				"patientPolicy": {
+					"operations": [
+						{
+							"operationName": "create"
+						},
+						{
+							"operationName": "read"
+						},
+						{
+							"operationName": "update"
+						},
+						{
+							"operationName": "delete"
+						}
+					]
+				},
+				"patientInfoPolicy": {
+					"serviceName": "_patient_info",
+					"operations": [
+						{
+							"operationName": "read",
+							"fieldProjections": [
+								{
+									"name": "id"
+								},
+								{
+									"name": "created_at"
+								},
+								{
+									"name": "created_by"
+								},
+								{
+									"name": "created_by_name"
+								},
+								{
+									"name": "updated_at"
+								},
+								{
+									"name": "updated_by"
+								},
+								{
+									"name": "updated_by_name"
+								},
+								{
+									"name": "source_name"
+								},
+								{
+									"name": "source_type"
+								},
+								{
+									"name": "source_id"
+								},
+								{
+									"name": "external_id"
+								},
+								{
+									"name": "external_guid"
+								}
+							]
+						},
+						{
+							"operationName": "read_masked",
+							"fieldProjections": [
+								{
+									"name": "id"
+								},
+								{
+									"name": "created_at"
+								},
+								{
+									"name": "created_by"
+								},
+								{
+									"name": "created_by_name"
+								},
+								{
+									"name": "updated_at"
+								},
+								{
+									"name": "updated_by"
+								},
+								{
+									"name": "updated_by_name"
+								},
+								{
+									"name": "source_name"
+								},
+								{
+									"name": "source_type"
+								},
+								{
+									"name": "source_id"
+								},
+								{
+									"name": "external_id"
+								},
+								{
+									"name": "external_guid"
+								}
+							]
+						},
+						{
+							"operationName": "update",
+							"fieldProjections": [
+								{
+									"name": "external_id"
+								},
+								{
+									"name": "external_guid"
+								}
+							]
+						}
+					]
+				},
+				"calendarPolicy": {
+					"operations": [
+						{
+							"resources": [
+								{
+									"name": "work_hours"
+								},
+								{
+									"name": "events"
+								},
+								{
+									"name": "other_team_member_work_hours"
+								},
+								{
+									"name": "other_team_member_events"
+								}
+							],
+							"operationName": "read"
+						},
+						{
+							"resources": [
+								{
+									"name": "work_hours"
+								},
+								{
+									"name": "events"
+								},
+								{
+									"name": "other_team_member_work_hours"
+								},
+								{
+									"name": "other_team_member_events"
+								}
+							],
+							"operationName": "write"
+						}
+					]
+				},
+				"dataManagement": {
+					"operations": [
+						{
+							"resources": [
+								{
+									"name": "data_csv"
+								},
+								{
+									"name": "calendar_event"
+								},
+								{
+									"name": "phone_record"
+								},
+								{
+									"name": "cdt_record"
+								},
+								{
+									"name": "patient"
+								},
+								{
+									"name": "email"
+								},
+								{
+									"name": "sms"
+								}
+							],
+							"operationName": "export"
+						}
+					]
+				},
+				"welkonnectPolicy": {
+					"operations": [
+						{
+							"operationName": "full_access",
+							"resources": [
+								{
+									"name": "chat"
+								},
+								{
+									"name": "chat_none_care_team"
+								},
+								{
+									"name": "chat_external_api"
+								},
+								{
+									"name": "sms"
+								},
+								{
+									"name": "sms_none_care_team"
+								},
+								{
+									"name": "sms_external_api"
+								},
+								{
+									"name": "email"
+								},
+								{
+									"name": "email_none_care_team"
+								},
+								{
+									"name": "email_external_api"
+								},
+								{
+									"name": "voice_calls"
+								},
+								{
+									"name": "voice_calls_none_care_team"
+								},
+								{
+									"name": "access_unrecognized_communications"
+								}
+							]
+						}
+					]
+				},
+				"documentPolicy": {
+					"operations": [
+						{
+							"operationName": "read",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "read_details",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "read_files",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "read_masked",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "create",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "update",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "update_details",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "update_files",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						},
+						{
+							"operationName": "delete",
+							"resources": [
+								{
+									"name": "doc-type-assessment"
+								},
+								{
+									"name": "doc-type-docusign"
+								},
+								{
+									"name": "doc-type-others"
+								}
+							]
+						}
+					]
+				},
+				"insights": {
+					"operations": [
+						{
+							"resources": [
+								{
+									"name": "all_reports"
+								}
+							],
+							"operationName": "read"
+						}
+					]
+				},
+				"_containsPHI": false
+			}
+		],
+		"territories": [
+			{
+				"name": "rgt-west-cost",
+				"title": "West cost",
+				"territories": [
+					"california",
+					"oregon",
+					"washington"
+				]
+			}
+		],
+		"roles": [
+			{
+				"name": "r-admin",
+				"description": "",
+				"policies": [
+					{
+						"name": "sp-admin"
+					}
+				],
+				"navigation": [
+					{
+						"name": "home"
+					},
+					{
+						"name": "my_patients"
+					}
+				],
+				"_containsPHI": false
+			}
+		]
+	},
+	"helpPage": {
+		"content": {
+			"blocks": [],
+			"entityMap": {}
+		}
+	},
+	"namingConvention": {
+		"delimiter": "-",
+		"prefixes": {
+			"cdt": "cdt-",
+			"cdtField": "cdtf-",
+			"pdt": "pdt-",
+			"pdtField": "pdtf-",
+			"uiPdt": "uipdt-",
+			"patientInfoField": "pif-",
+			"cft": "cft-",
+			"docType": "dt-",
+			"docTypeField": "dtf-",
+			"dictionary": "d-",
+			"dictionaryField": "df-",
+			"assessment": "asm-",
+			"uiSingleCompact": "uicsrc-",
+			"uiSingleExpand": "uicsre-",
+			"uiTableCompact": "uictc-",
+			"uiTableExpand": "uicte-",
+			"uiChartCompact": "chartc-",
+			"uiChartExpand": "charte-",
+			"uiProgramSummarySingleCompact": "pssrc-",
+			"uiProgramSummarySingleExpand": "pssre-",
+			"uiProgramSummaryTableCompact": "pstc-",
+			"uiProgramSummaryTableExpand": "pste-",
+			"uiRelationshipTherapySingleCompact": "rlsrc-",
+			"uiRelationshipTherapySingleExpand": "rlsre-",
+			"uiRelationshipTherapyTableCompact": "rltc-",
+			"uiRelationshipTherapyTableExpand": "rlte-",
+			"program": "prog-",
+			"patientLayout": "pl-",
+			"securityPolicy": "sp-",
+			"territory": "rgt-",
+			"role": "r-",
+			"taskTemplate": "ttmp-",
+			"customEvent": "ce-",
+			"automation": "auto-",
+			"webhook": "wh-",
+			"encounterTemplate": "etmp-",
+			"encounterDispositionField": "uicedf-",
+			"goalTemplate": "gtmp-",
+			"messageTemplate": "mtmp-",
+			"docusignTemplate": "dtmp-",
+			"userNotificationTemplate": "untmp-",
+			"userNotification": "un-"
+		}
+	},
+	"cdts": [
+		{
+			"id": "b6baa6fe-1188-4f5a-a424-9ff744e4394a",
+			"name": "__encounter__",
+			"title": null,
+			"label": null,
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": false,
+			"type": "MULTI_RECORD",
+			"relation": "ENCOUNTER",
+			"fields": [
+				{
+					"name": "calendarEventId",
+					"type": "uuid",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "calendarEvent",
+					"type": "object",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "currentScheduledAppointment",
+					"type": "object",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "ownerUserId",
+					"type": "uuid",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "ownerUserName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "title",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "description",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "instruction",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "templateName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "dispositionId",
+					"type": "uuid",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "notes",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "startDatetime",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "endDatetime",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "calendarEventStartDatetime",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "activeUserId",
+					"type": "uuid",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "activeUserName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "status",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "81295a1a-8999-4fdc-b402-c0dfd817f132",
+			"name": "__encounter_assessment__",
+			"title": null,
+			"label": null,
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": false,
+			"type": "MULTI_RECORD",
+			"relation": "ENCOUNTER_ASSESSMENT",
+			"fields": [
+				{
+					"name": "relation",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "assessmentName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "assessmentRecordId",
+					"type": "uuid",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "fromTemplate",
+					"type": "checkbox",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": "CHECKBOX",
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "4c60e36e-4da7-4cb9-86f2-75bcdae20d07",
+			"name": "__encounter_disposition__",
+			"title": null,
+			"label": null,
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": true,
+			"type": "MULTI_RECORD",
+			"relation": "ENCOUNTER_DISPOSITION",
+			"fields": [
+				{
+					"name": "notes",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "435993d1-237e-4367-bc97-69f645bb16a1",
+			"name": "_document_summary",
+			"title": "Document Summary",
+			"label": "Document Summary",
+			"version": 4,
+			"internal": true,
+			"readable": false,
+			"updatable": false,
+			"type": "MULTI_RECORD",
+			"relation": "DOCUMENT_SUMMARY",
+			"fields": [
+				{
+					"name": "files",
+					"type": "file",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"fileTypes": [
+							"jpg",
+							"jpeg",
+							"png",
+							"pdf"
+						],
+						"required": false
+					}
+				},
+				{
+					"name": "type",
+					"type": "select",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": "SELECT",
+					"valueType": "STRING",
+					"meta": {
+						"required": true,
+						"options": [
+							{
+								"label": "Assessment",
+								"value": "doc-type-assessment",
+								"refCdtName": "doc-type-assessment"
+							},
+							{
+								"label": "Docusign",
+								"value": "doc-type-docusign",
+								"refCdtName": "doc-type-docusign"
+							},
+							{
+								"label": "Others",
+								"value": "doc-type-others",
+								"refCdtName": "doc-type-others"
+							}
+						]
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "bb6ac9ad-e97a-4803-a0ec-24d91c9baf85",
+			"name": "_patient_goal",
+			"title": null,
+			"label": null,
+			"version": 4,
+			"internal": true,
+			"readable": false,
+			"updatable": false,
+			"type": "MULTI_RECORD",
+			"relation": "PATIENT_GOAL",
+			"fields": [
+				{
+					"name": "name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": true,
+						"options": []
+					}
+				},
+				{
+					"name": "type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": true,
+						"options": []
+					}
+				},
+				{
+					"name": "templateName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": true,
+						"options": []
+					}
+				},
+				{
+					"name": "priority",
+					"type": "select",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": "SELECT",
+					"valueType": "STRING",
+					"meta": {
+						"required": true,
+						"options": [
+							{
+								"label": "LOW",
+								"value": "LOW",
+								"refCdtName": null
+							},
+							{
+								"label": "MEDIUM",
+								"value": "MEDIUM",
+								"refCdtName": null
+							},
+							{
+								"label": "HIGH",
+								"value": "HIGH",
+								"refCdtName": null
+							}
+						]
+					}
+				},
+				{
+					"name": "status",
+					"type": "select",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": "SELECT",
+					"valueType": "STRING",
+					"meta": {
+						"required": true,
+						"options": [
+							{
+								"label": "ACTIVE",
+								"value": "ACTIVE",
+								"refCdtName": null
+							},
+							{
+								"label": "COMPLETED",
+								"value": "COMPLETED",
+								"refCdtName": null
+							},
+							{
+								"label": "REMOVED",
+								"value": "REMOVED",
+								"refCdtName": null
+							}
+						]
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "ffd8e55c-79ee-480d-9d8f-67272a883e65",
+			"name": "_patient_info",
+			"title": "Patient Info",
+			"label": "Patient Info",
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": true,
+			"type": "SINGLE_RECORD",
+			"relation": "PATIENT_INFO",
+			"fields": [
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "91e02eba-3749-4a84-a744-585050752369",
+			"name": "cdt-vitals",
+			"title": null,
+			"label": null,
+			"version": 4,
+			"internal": false,
+			"readable": true,
+			"updatable": true,
+			"type": "MULTI_RECORD",
+			"relation": "COMMON",
+			"fields": [
+				{
+					"name": "cdtf-blood-pressure",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "cdtf-heart-rate",
+					"type": "integer",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "cdtf-temperature",
+					"type": "float",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "0d1b8835-9690-43f4-a7ae-d520b6aa0f79",
+			"name": "doc-type-assessment",
+			"title": "Assessment",
+			"label": "Assessment",
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": true,
+			"type": "MULTI_RECORD",
+			"relation": "DOCUMENT_TYPE",
+			"fields": [
+				{
+					"name": "notes",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "6ed9d034-cf77-413c-a78f-0ddad4af6e4a",
+			"name": "doc-type-docusign",
+			"title": "Docusign",
+			"label": "Docusign",
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": true,
+			"type": "MULTI_RECORD",
+			"relation": "DOCUMENT_TYPE",
+			"fields": [
+				{
+					"name": "notes",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "000a6e57-6bcf-4a42-a4e4-161fdc8e2e3e",
+			"name": "doc-type-others",
+			"title": "Others",
+			"label": "Others",
+			"version": 4,
+			"internal": true,
+			"readable": true,
+			"updatable": true,
+			"type": "MULTI_RECORD",
+			"relation": "DOCUMENT_TYPE",
+			"fields": [
+				{
+					"name": "notes",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		}
+	],
+	"uiComponents": [
+		{
+			"id": null,
+			"label": "Encounter disposition",
+			"name": "__encounter_disposition_ui__",
+			"cdtName": "__encounter_disposition__",
+			"uiComponentType": "UI_ENCOUNTER_DISPOSITION",
+			"version": 4,
+			"data": [
+				{
+					"type": "edit",
+					"title": "Edit encounter disposition",
+					"grid": [],
+					"typeView": null,
+					"viewSize": null,
+					"gridColumnSize": "MULTIPLE",
+					"rowLimit": null,
+					"enabled": true,
+					"fields": []
+				},
+				{
+					"type": "view",
+					"title": "View encounter disposition",
+					"grid": [],
+					"typeView": "single",
+					"viewSize": "EXPAND",
+					"gridColumnSize": null,
+					"rowLimit": null,
+					"enabled": true,
+					"fields": []
+				}
+			],
+			"filter": null,
+			"sort": [],
+			"icon": null,
+			"title": null
+		},
+		{
+			"id": null,
+			"label": null,
+			"name": "pste-program-view",
+			"uiComponentType": "UI_PROGRAM_SUMMARY",
+			"version": 4,
+			"data": [
+				{
+					"type": "add",
+					"title": "Add Program",
+					"grid": [],
+					"typeView": null,
+					"viewSize": null,
+					"gridColumnSize": "MULTIPLE",
+					"rowLimit": null,
+					"enabled": true,
+					"fields": []
+				},
+				{
+					"type": "edit",
+					"title": "Edit Program Phase",
+					"grid": [],
+					"typeView": null,
+					"viewSize": null,
+					"gridColumnSize": "MULTIPLE",
+					"rowLimit": null,
+					"enabled": true,
+					"fields": []
+				},
+				{
+					"type": "view",
+					"title": "Program Phase",
+					"grid": [],
+					"typeView": "table",
+					"viewSize": "EXPAND",
+					"gridColumnSize": null,
+					"rowLimit": 5,
+					"enabled": true,
+					"fields": []
+				}
+			],
+			"filter": null,
+			"sort": [],
+			"icon": null,
+			"title": null
+		},
+		{
+			"id": null,
+			"label": null,
+			"name": "uicte-vitals",
+			"cdtName": "cdt-vitals",
+			"uiComponentType": "UI_CDT",
+			"version": 4,
+			"data": [
+				{
+					"type": "add",
+					"title": "Add Vitals",
+					"grid": [
+						{
+							"name": "cdtf-blood-pressure",
+							"x": 0,
+							"y": 0
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"x": 0,
+							"y": 1
+						},
+						{
+							"name": "cdtf-temperature",
+							"x": 0,
+							"y": 2
+						}
+					],
+					"typeView": null,
+					"viewSize": null,
+					"gridColumnSize": "SINGLE",
+					"rowLimit": null,
+					"enabled": true,
+					"fields": [
+						{
+							"name": "cdtf-blood-pressure",
+							"type": "text",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Blood Pressure",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"type": "integer",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Heart Rate",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-temperature",
+							"type": "float",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Temperature",
+								"placeholder": ""
+							}
+						}
+					]
+				},
+				{
+					"type": "edit",
+					"title": "Edit Vitals",
+					"grid": [
+						{
+							"name": "cdtf-blood-pressure",
+							"x": 0,
+							"y": 0
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"x": 0,
+							"y": 1
+						},
+						{
+							"name": "cdtf-temperature",
+							"x": 0,
+							"y": 2
+						}
+					],
+					"typeView": null,
+					"viewSize": null,
+					"gridColumnSize": "SINGLE",
+					"rowLimit": null,
+					"enabled": true,
+					"fields": [
+						{
+							"name": "cdtf-blood-pressure",
+							"type": "text",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Blood Pressure",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"type": "integer",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Heart Rate",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-temperature",
+							"type": "float",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Temperature",
+								"placeholder": ""
+							}
+						}
+					]
+				},
+				{
+					"type": "view",
+					"title": "Vitals",
+					"grid": [
+						{
+							"name": "cdtf-blood-pressure",
+							"x": 0,
+							"y": 0
+						},
+						{
+							"name": "cdtf-temperature",
+							"x": 1,
+							"y": 0
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"x": 2,
+							"y": 0
+						}
+					],
+					"typeView": "table",
+					"viewSize": "EXPAND",
+					"gridColumnSize": null,
+					"rowLimit": 5,
+					"enabled": true,
+					"fields": [
+						{
+							"name": "cdtf-blood-pressure",
+							"type": "text",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Blood Pressure",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-heart-rate",
+							"type": "integer",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Heart Rate",
+								"placeholder": ""
+							}
+						},
+						{
+							"name": "cdtf-temperature",
+							"type": "float",
+							"bulkEdit": false,
+							"meta": {
+								"required": false,
+								"label": "Temperature",
+								"placeholder": ""
+							}
+						}
+					]
+				}
+			],
+			"filter": {
+				"selectString": []
+			},
+			"sort": [],
+			"icon": null,
+			"title": null
+		}
+	],
+	"patientLayouts": [
+		{
+			"id": "5340b2f0-8ce6-491c-950e-61c76cd63564",
+			"version": 4,
+			"order": 0,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__care_plans__",
+			"title": "Care Plans",
+			"roles": [
+				"r-admin"
+			]
+		},
+		{
+			"id": "cdff077d-343b-4f83-b252-c046d30816b4",
+			"version": 4,
+			"order": 1,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__assessments__",
+			"title": "Assessments",
+			"roles": []
+		},
+		{
+			"id": "b149586a-c3b8-4680-b753-0310dc912817",
+			"version": 4,
+			"order": 2,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__documents__",
+			"title": "Documents",
+			"roles": []
+		},
+		{
+			"id": "bef35033-ca19-444b-8576-f1c413513106",
+			"version": 4,
+			"order": 3,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__encounters__",
+			"title": "Encounters",
+			"roles": []
+		},
+		{
+			"id": "8b7f91a9-b850-4e89-aaa1-4f1b9e76d961",
+			"version": 4,
+			"order": 4,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__comm_center__",
+			"title": "Comm Center",
+			"roles": []
+		},
+		{
+			"id": "449a5369-28fb-4a9c-a217-a1db72bb0c11",
+			"version": 4,
+			"order": 5,
+			"grid": {
+				"additional": [],
+				"main": [
+					{
+						"name": "uicte-vitals",
+						"x": 0,
+						"y": 0,
+						"type": null,
+						"uiComponentType": "UI_CDT",
+						"data": null
+					},
+					{
+						"name": "pste-program-view",
+						"x": 0,
+						"y": 1,
+						"type": null,
+						"uiComponentType": "UI_PROGRAM_SUMMARY",
+						"data": null
+					}
+				]
+			},
+			"name": "pl-general-information",
+			"title": "General Information",
+			"roles": [
+				"r-admin"
+			]
+		}
+	],
+	"assessments": [],
+	"programs": [
+		{
+			"name": "prog-sample",
+			"title": "Sample",
+			"description": "Example Program",
+			"phases": [
+				{
+					"name": "intake",
+					"title": "Intake",
+					"type": "START",
+					"description": "initial phase",
+					"navigateTo": [
+						{
+							"name": "diagnose"
+						}
+					]
+				},
+				{
+					"name": "diagnose",
+					"title": "Diagnose",
+					"type": "DEFAULT",
+					"description": "",
+					"navigateTo": [
+						{
+							"name": "treatment-a"
+						},
+						{
+							"name": "treatment-b"
+						}
+					]
+				},
+				{
+					"name": "treatment-a",
+					"title": "Treatment-A",
+					"type": "DEFAULT",
+					"description": "",
+					"navigateTo": [
+						{
+							"name": "continued-education"
+						}
+					]
+				},
+				{
+					"name": "treatment-b",
+					"title": "Treatment-B",
+					"type": "DEFAULT",
+					"description": "",
+					"navigateTo": [
+						{
+							"name": "continued-education"
+						}
+					]
+				},
+				{
+					"name": "continued-education",
+					"title": "Continued Education",
+					"type": "DEFAULT",
+					"description": "",
+					"navigateTo": [
+						{
+							"name": "finish"
+						}
+					]
+				},
+				{
+					"name": "finish",
+					"title": "Finish",
+					"type": "FINISH",
+					"description": "",
+					"navigateTo": []
+				}
+			],
+			"nodes": [
+				{
+					"id": "intake",
+					"data": {
+						"type": "START",
+						"label": "Intake"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": 60,
+						"y": 0
+					}
+				},
+				{
+					"id": "finish",
+					"data": {
+						"type": "FINISH",
+						"label": "Finish"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": 80,
+						"y": 440
+					}
+				},
+				{
+					"id": "diagnose",
+					"data": {
+						"type": "DEFAULT",
+						"label": "Diagnose"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": 60,
+						"y": 100
+					}
+				},
+				{
+					"id": "treatment-a",
+					"data": {
+						"type": "DEFAULT",
+						"label": "Treatment-A"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": -120,
+						"y": 200
+					}
+				},
+				{
+					"id": "treatment-b",
+					"data": {
+						"type": "DEFAULT",
+						"label": "Treatment-B"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": 260,
+						"y": 200
+					}
+				},
+				{
+					"id": "continued-education",
+					"data": {
+						"type": "DEFAULT",
+						"label": "Continued Education"
+					},
+					"type": "graphNode",
+					"position": {
+						"x": 40,
+						"y": 300
+					}
+				},
+				{
+					"id": "reactflow__edge-treatment-aHandleSrcBottom_b3564630-36de-4d16-8335-afe480b9937a-continued-educationHandleTargetLeft_4124d3e0-2f1d-453d-8b30-fe17ca488583",
+					"type": "smoothstep",
+					"source": "treatment-a",
+					"target": "continued-education",
+					"animated": true,
+					"sourceHandle": "HandleSrcBottom_treatment-a",
+					"targetHandle": "HandleTargetLeft_continued-education",
+					"arrowHeadType": "arrowclosed"
+				},
+				{
+					"id": "reactflow__edge-diagnoseHandleSrcBottom_b961279d-4367-4b79-bcfd-701cee028847-treatment-bHandleTargetTop_030875a4-460c-4acd-8ab4-1da17d6be909",
+					"type": "smoothstep",
+					"source": "diagnose",
+					"target": "treatment-b",
+					"animated": true,
+					"sourceHandle": "HandleSrcBottom_diagnose",
+					"targetHandle": "HandleTargetTop_treatment-b",
+					"arrowHeadType": "arrowclosed"
+				},
+				{
+					"id": "reactflow__edge-treatment-bHandleSrcBottom_030875a4-460c-4acd-8ab4-1da17d6be909-continued-educationHandleTargetRight_4124d3e0-2f1d-453d-8b30-fe17ca488583",
+					"type": "smoothstep",
+					"source": "treatment-b",
+					"target": "continued-education",
+					"animated": true,
+					"sourceHandle": "HandleSrcBottom_treatment-b",
+					"targetHandle": "HandleTargetRight_continued-education",
+					"arrowHeadType": "arrowclosed"
+				},
+				{
+					"id": "reactflow__edge-diagnoseHandleSrcBottom_b961279d-4367-4b79-bcfd-701cee028847-treatment-aHandleTargetTop_b3564630-36de-4d16-8335-afe480b9937a",
+					"type": "smoothstep",
+					"source": "diagnose",
+					"target": "treatment-a",
+					"animated": true,
+					"sourceHandle": "HandleSrcBottom_diagnose",
+					"targetHandle": "HandleTargetTop_treatment-a",
+					"arrowHeadType": "arrowclosed"
+				},
+				{
+					"id": "reactflow__edge-intakeHandleSrcBottom_46938ff0-804b-4055-bb2b-43c875611f21-diagnoseHandleTargetTop_b961279d-4367-4b79-bcfd-701cee028847",
+					"type": "smoothstep",
+					"source": "intake",
+					"target": "diagnose",
+					"animated": true,
+					"sourceHandle": "HandleSrcBottom_intake",
+					"targetHandle": "HandleTargetTop_diagnose",
+					"arrowHeadType": "arrowclosed"
+				},
+				{
+					"id": "reactflow__edge-continued-educationHandleSrcRight_4124d3e0-2f1d-453d-8b30-fe17ca488583-finishHandleTargetBottom_bbe8fbb0-1961-47c8-b210-90ef1e169389",
+					"type": "smoothstep",
+					"source": "continued-education",
+					"target": "finish",
+					"animated": true,
+					"sourceHandle": "HandleSrcRight_continued-education",
+					"targetHandle": "HandleTargetBottom_finish",
+					"arrowHeadType": "arrowclosed"
+				}
+			]
+		}
+	],
+	"dictionaries": [
+		{
+			"name": "cpt",
+			"title": "CPT",
+			"internal": false,
+			"fields": [
+				{
+					"name": "value",
+					"type": "text"
+				}
+			]
+		},
+		{
+			"name": "icd-10",
+			"title": "ICD-10",
+			"internal": false,
+			"fields": [
+				{
+					"name": "value",
+					"type": "text"
+				}
+			]
+		}
+	],
+	"pdts": [],
+	"therapies": [
+		{
+			"id": "8de1ead1-edff-4e28-ba5a-2fa02ee15cd7",
+			"body": {
+				"fields": []
+			}
+		}
+	],
+	"actionBars": [
+		{
+			"available": [
+				{
+					"name": "email",
+					"title": "Email",
+					"url": null,
+					"icon": "emails"
+				},
+				{
+					"name": "sms",
+					"title": "Sms",
+					"url": null,
+					"icon": "conversation"
+				},
+				{
+					"name": "calendar",
+					"title": "Calendar",
+					"url": null,
+					"icon": "calendar"
+				},
+				{
+					"name": "new_encounter",
+					"title": "New Encounter",
+					"url": null,
+					"icon": "new-encounter"
+				},
+				{
+					"name": "chat",
+					"title": "Chat",
+					"url": null,
+					"icon": "message"
+				},
+				{
+					"name": "zoom",
+					"title": "Zoom",
+					"url": null,
+					"icon": "video-2"
+				},
+				{
+					"name": "phone_calls",
+					"title": "Phone Call",
+					"url": null,
+					"icon": "phones"
+				},
+				{
+					"name": "lab",
+					"title": "Laboratory",
+					"url": null,
+					"icon": "lab"
+				},
+				{
+					"name": "erx",
+					"title": "eRx",
+					"url": null,
+					"icon": "erx"
+				},
+				{
+					"name": "new_sms",
+					"title": "New Sms",
+					"url": null,
+					"icon": "new-sms"
+				},
+				{
+					"name": "new_email",
+					"title": "New Email",
+					"url": null,
+					"icon": "new-email"
+				},
+				{
+					"name": "new_phone_calls",
+					"title": "New Phone Call",
+					"url": null,
+					"icon": "new-phone"
+				}
+			],
+			"visible": []
+		}
+	],
+	"customFieldTypes": [],
+	"taskTemplates": [],
+	"automations": [],
+	"automationConfigs": [],
+	"customEventSubtypes": [],
+	"docusignFormations": [],
+	"encounterTemplates": [],
+	"webhookConfigs": [],
+	"messageTemplates": [
+		{
+			"name": "dn_email_template",
+			"template": "Hi {{USER_FIRST_NAME}}, you have new notification",
+			"type": "PLAIN_TEXT",
+			"title": "Default notification email template",
+			"subject": null,
+			"messageTypes": [
+				"EMAIL"
+			],
+			"messageWayType": "NOTIFICATION",
+			"labels": [],
+			"available": true,
+			"systemTemplate": true,
+			"contextType": "GENERAL"
+		},
+		{
+			"name": "dn_sms_template",
+			"template": "Hi {{USER_FIRST_NAME}}, you have new notification",
+			"type": "PLAIN_TEXT",
+			"title": "Default notification sms template",
+			"subject": null,
+			"messageTypes": [
+				"SMS"
+			],
+			"messageWayType": "NOTIFICATION",
+			"labels": [],
+			"available": true,
+			"systemTemplate": true,
+			"contextType": "GENERAL"
+		}
+	],
+	"goalTemplates": [],
+	"messageTemplateLabels": [],
+	"labels": [],
+	"notificationConfigurations": [
+		{
+			"eventSubtype": "SMS_UNREAD_MESSAGE",
+			"name": "SMS_UNREAD_MESSAGE",
+			"title": "SMS UNREAD MESSAGE",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "CHAT_UNREAD_MESSAGE",
+			"name": "CHAT_UNREAD_MESSAGE",
+			"title": "CHAT UNREAD MESSAGE",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_COMMENT_REMOVED",
+			"name": "TASK_COMMENT_REMOVED",
+			"title": "TASK COMMENT REMOVED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_WATCHER_REMOVED",
+			"name": "TASK_WATCHER_REMOVED",
+			"title": "TASK WATCHER REMOVED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_WATCHER_ADDED",
+			"name": "TASK_WATCHER_ADDED",
+			"title": "TASK WATCHER ADDED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "UNRECOGNIZED_EMAIL_UNREAD_MESSAGE",
+			"name": "UNRECOGNIZED_EMAIL_UNREAD_MESSAGE",
+			"title": "UNRECOGNIZED EMAIL UNREAD MESSAGE",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_UPDATED",
+			"name": "TASK_UPDATED",
+			"title": "TASK UPDATED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_DELETED",
+			"name": "TASK_DELETED",
+			"title": "TASK DELETED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_CREATED",
+			"name": "TASK_CREATED",
+			"title": "TASK CREATED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "TASK_COMMENT_ADDED",
+			"name": "TASK_COMMENT_ADDED",
+			"title": "TASK COMMENT ADDED",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "UNRECOGNIZED_SMS_UNREAD_MESSAGE",
+			"name": "UNRECOGNIZED_SMS_UNREAD_MESSAGE",
+			"title": "UNRECOGNIZED SMS UNREAD MESSAGE",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "UNRECOGNIZED_VOICE_CALL_MISSED_CALL",
+			"name": "UNRECOGNIZED_VOICE_CALL_MISSED_CALL",
+			"title": "UNRECOGNIZED VOICE CALL MISSED CALL",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "EMAIL_UNREAD_MESSAGE",
+			"name": "EMAIL_UNREAD_MESSAGE",
+			"title": "EMAIL UNREAD MESSAGE",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		},
+		{
+			"eventSubtype": "VOICE_CALL_MISSED_CALL",
+			"name": "VOICE_CALL_MISSED_CALL",
+			"title": "VOICE CALL MISSED CALL",
+			"conditionality": null,
+			"sendEmail": false,
+			"sendSms": false,
+			"sendWebhook": false,
+			"sendNotification": false,
+			"internal": true,
+			"smsTemplateName": "dn_sms_template",
+			"emailTemplateName": "dn_email_template",
+			"webhookConfigName": null
+		}
+	]
+}
