@@ -1,0 +1,21 @@
+{
+    "id": "6801d498-26f4-4aee-961b-5daffcf193c8",
+    "firstName": "Charlie",
+    "lastName": "Schwarzenegger",
+    "birthDate": "2012-08-12T00:00:00.000Z",
+    "email": "2@2.com",
+    "phone": "+13363034233",
+    "country": "USA",
+    "state": "American Samoa",
+    "city": "Los Angeles",
+    "zip": "99451",
+    "addressLine1": "Hollywood Blvd 1111",
+    "timezone": "UTC",
+    "patientTerritories": [],
+    "careTeam": [
+        {
+            "id": "20eb246e-8099-4c7c-854c-5e0f9a366ddb",
+            "pointOfContact": true
+        }
+    ]
+}
