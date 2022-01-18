@@ -29,9 +29,9 @@ The draft_config.json file should be used in  designer 'create draft' configurat
 1. Go to Change Summary - Create Draft
 ![designer](docs/static/designer1.jpg)
 2. Choose from file and browse.
-![create_draft](docs/static/create draft.jpg)
+![create_draft](docs/static/create_draft.jpg)
 3. Choose draft_config.json file from root path of Sample app.
-![draft_config](docs/static/draft config.jpg)
+![draft_config](docs/static/draft_config.jpg)
 Once you finished the steps, there are several variables in URL structure we need to setup before using this Repo.
 
 `
