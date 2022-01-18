@@ -22,14 +22,15 @@ import json
 from dotenv import get_key
 from config import Config
 
-token = get_key('../.env','WELKIN_API_TOKEN')
-headers = { "Authorization": "Bearer {}".format(token)}
+token = get_key('../.env',   'WELKIN_API_TOKEN')
+headers = {"Authorization": "Bearer {}".format(token)}
 
 data = json.load(open('create_cdt.json'))
 
+
 def create_cdt(patientId, cdtName):
     data = json.load(open('create_cdt.json'))
-    print('data',data)
+    print('data', data)
     url = 'https://api.%s.welkincloud.io/%s/%s/patients/%s/cdts/%s' \
         %(Config.ENV, Config.tenantName, Config.instanceName, patientId, cdtName)
     print('URL', url)
