@@ -25,15 +25,15 @@ For this example we will assume Client Name is **VBOPNRYRWJIP** and Secret Key i
 ---
 ### Configuration
 
-**There is draft_config.json file should be used in  designer 'create draft' configuration**
-
+**The draft_config.json file should be used in  designer 'create draft' configuration**
+![ProgramPhases](docs/static/designer1.jpg)
 Once you finished the steps, there are several variables in URL structure we need to setup before using this Repo.
 
 `
-**Note: Edit param.py file and set values** 
+**Note: Set API client name, tenant name,
+instance name, secret and environment(stg/live) in config.py file** 
 
-1. First variable is your Tenant (orgnization) name. 
-We will use gh as a tenant name through this set of api docs
+1. First variable is your Tenant (orgnization) name.
    
 2.  Second variable is your client name. 
 In order to Authenticate in Welkin, client name, secret required.
