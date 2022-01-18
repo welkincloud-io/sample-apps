@@ -14,13 +14,11 @@ class Config(object):
     """common configuration"""
 
     # organization (Tenant)
-    tenantName = "niyuj"
+    tenantName = ""
     # API Client name
-    apiClientName = "SYOGMCXLWINO"
+    apiClientName = ""
     # Instance (Environment)
-    instanceName = "earth"
-    SECRET = "lx3D^.d5K+C=.B}9e<V8"
+    instanceName = ""
+    SECRET = ""
     # stg/live
-    ENV = 'stg'
-
-
+    ENV = ''
