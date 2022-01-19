@@ -1,4 +1,3 @@
-***
 ### Custom Data Types (CDT)
 ***
 Custom data types in Welkin are associated with a Patient. In REST terms, they are a sub-resource to the patient object
