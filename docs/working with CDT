@@ -30,18 +30,18 @@ we can add record and modify field using scripts provided in CDT.
 ***
 
 
-####Description
+#### Description
 
 Get all cdt records
 
-####HTTP Request
+#### HTTP Request
 **GET** /{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}
 
 in our example it would be:
 
 **GET**  https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals
 
-####Parameters
+#### Parameters
 
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
@@ -58,7 +58,7 @@ in our example it would be:
 |   dateEnd |   args    |	Date_time in ISO-8601 format	|   No  |	datetime    |
 
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -68,10 +68,10 @@ in our example it would be:
 | 404 | Not  Found |
 ***
 
-####Description
+#### Description
 Get cdt record by identifier (id, external_id, external_guid)
 
-####HTTP Request
+#### HTTP Request
 **GET** /{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}
 
 in our example it would be:
@@ -79,7 +79,7 @@ in our example it would be:
 **GET** https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals/8c0684ac-217e-45f4-8727-5587220dd512
 
 
-####Parameters
+#### Parameters
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
 |  patientId | path  | ID of patient | Yes |	UUID  |
@@ -90,7 +90,7 @@ in our example it would be:
 | type |  query  |	Identificator type (ID, EID, EGUID), default ID | No |	String  |
 ***
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -99,7 +99,7 @@ in our example it would be:
 | 403 | Forbidden |
 | 404 | Not  Found |
 
-#####Examples
+##### Examples
 
 1. https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals/8c0684ac-217e-45f4-8727-5587220dd512
 2. https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals/4a245aac-217e-45f4-8727-5587220dd512?type=EGUID
@@ -107,18 +107,18 @@ in our example it would be:
 
 ***
 
-####Description
+#### Description
 
 Create cdt record
 
-####HTTP Request
+#### HTTP Request
 **POST** /{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}
 
 in our example it would be:
 
 **POST** https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/{cdtName}
 
-####Parameters
+#### Parameters
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
 | userId | path | ID of user | Yes | UUID |
@@ -126,7 +126,7 @@ in our example it would be:
 | instanceName | path |	Name of instance | Yes | string |
 | cdtName |	path | Name of cdt | Yes | string |
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -136,17 +136,17 @@ in our example it would be:
 | 404 | Not  Found |
 ***
 
-####Description
+#### Description
 Update cdt record by id
 
-####HTTP Request
+#### HTTP Request
 **PATCH**/{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}
 
 in our example it would be:
 
 **PATCH** https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals/8c0684ac-217e-45f4-8727-5587220dd512
 
-####Parameters
+#### Parameters
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
 | userId | path | ID of user | Yes | UUID |
@@ -155,7 +155,7 @@ in our example it would be:
 | cdtName |	path | Name of cdt | Yes | string |
 | cdtRecordId |	path | ID of cdt record	| Yes | UUID |
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -164,17 +164,17 @@ in our example it would be:
 | 403 | Forbidden |
 | 404 | Not  Found |
 ***
-####Description
+#### Description
 Update cdt records with bulk. Allowed only for list fields with bulk edit flag
 
-####HTTP Request
+#### HTTP Request
 **PATCH** /{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}
 
 in our example it would be:
 
 **PATCH** https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals
 
-####Parameters
+#### Parameters
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
 | userId | path | ID of user | Yes | UUID |
@@ -183,7 +183,7 @@ in our example it would be:
 | cdtName |	path | Name of cdt | Yes | string |
 
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -192,17 +192,17 @@ in our example it would be:
 | 403 | Forbidden |
 | 404 | Not  Found |
 ***
-####Description
+#### Description
 Delete cdt record by id
 
-####HTTP Request
+#### HTTP Request
 **DELETE** /{tenantName}/{instanceName}/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}
 
 in our example it would be:
 
 **DELETE** https://api.live.welkincloud.io/gh/sb-demo/patients/d6ea79ce-d3d6-4c2d-a27e-e4d1207f60f1/cdts/vitals/8c0684ac-217e-45f4-8727-5587220dd512
 
-####Parameters
+#### Parameters
 | **Name** | **Located in** | **Description** |**Required**| **Type** |
 |---|---|---|---|---|
 | userId | path | ID of user | Yes | UUID |
@@ -211,7 +211,7 @@ in our example it would be:
 | cdtName |	path | Name of cdt | Yes | string |
 | cdtRecordId |	path | ID of cdt record	| Yes | UUID |
 
-####Responses
+#### Responses
 
 | **Code** | **Description** |
 |---|---|
@@ -221,5 +221,5 @@ in our example it would be:
 | 404 | Not  Found |
 ***
 
-###Troubleshooting steps 
+### Troubleshooting steps 
 ...Work in progress
