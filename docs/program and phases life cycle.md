@@ -27,7 +27,7 @@ We can assign patient which is already assinged to program to any one phase from
 On Care Portal You can see the program and phase in patient profile - General Information 
 
 
-![ProgramPhases](static/program_phases_UI.png)
+![ProgramPhases](static/Program_phases_UI.png)
 
 ### Troubleshooting steps 
 ...Work in progress
