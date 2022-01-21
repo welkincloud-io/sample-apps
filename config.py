@@ -7,7 +7,6 @@ It is suggested that you create a single Config object in
 your project and pass that to the various API calls, rather than create new
 Config objects. This is merely a design suggestion, treat it as such.
 """
-from __future__ import absolute_import
 
 
 class Config(object):
