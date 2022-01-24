@@ -1,21 +1,8 @@
 {
-  "phase": "intake",
-  "primary_worker_id": "1ecacc1f-1a4c-4bcb-9790-528642cba054",
-  "timezone": "US/Pacific",
-  "first_name": "Grace",
-  "last_name": "Hopper",
-  "birthday": "1906-12-09",
-  "street": "3265 17th St",
-  "street_line_two": "#304",
-  "city": "San Francisco",
-  "county": "San Francisco County",
-  "zip_code": "94110",
-  "state": "CA",
-  "country": "US",
-  "primary_language": "english",
-  "gender": "Female",
-  "height": "72",
-  "weight": "175",
-  "smokes": "false",
-  "provider_id_number": "7IHnPI80"
+    "firstName": "Charlie",
+    "lastName": "Taylor",
+    "birthDate": "2012-3-12T00:00:00.000Z",
+    "timezone": "America/Los_Angeles",
+    "phone": "+15556491369",
+    "email": "Charlie.Taylor@superemail.com"
 }

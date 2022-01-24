@@ -12,16 +12,15 @@ Example:
 import requests
 import json
 from dotenv import get_key
-from config import Config
+from config import Config as C
 
 token = get_key('../.env','WELKIN_API_TOKEN')
 headers = { "Authorization": "Bearer {}".format(token)}
 
 
 def create_patient(data):
-  url = 'https://api.%s.welkincloud.io/%s/%s/patients' % \
-        (Config.ENV, Config.tenantName, Config.instanceName)
-
+  url = f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/{C.instanceName}/patients"
+  print(url)
   r = requests.post(url, headers=headers, json=data)
 
   if r.ok:
