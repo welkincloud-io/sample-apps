@@ -14,25 +14,25 @@ Example:
 """
 
 import requests
-import os
 import json
+from dotenv import get_key
 from docopt import docopt
-from config import Config
+from config import Config as c
 
-token = os.environ['WELKIN_API_TOKEN']
+token = get_key('../.env', 'WELKIN_API_TOKEN')
 headers = {"Authorization": "Bearer {}".format(token)}
 
 
 def update_patient_info(patientId):
     data = json.load(open('update_patient_info.json'))
-    url = 'https://api.%s.welkincloud.io/%s/%s/patients/%s'\
-        % (Config.ENV, Config.tenantName, Config.instanceName, patientId)
+    url = f'https://api.{c.ENV}.welkincloud.io/{c.tenantName}/{c.instanceName}/patients/{patientId}'
+    print(url)
 
     r = requests.post(url, headers=headers, json=data)
 
     if r.ok:
         print("Updated Patient info  Successfully")
-        print('response', r)
+        print('response', r.json())
     else:
         print(r.status_code, r.text)
 
