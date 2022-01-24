@@ -16,8 +16,8 @@ class Config(object):
     tenantName = ""
     # API Client name
     apiClientName = ""
+    SECRET = ""
     # Instance (Environment)
     instanceName = ""
-    SECRET = ""
     # stg/live
-    ENV = ''
+    ENV = ""
