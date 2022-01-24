@@ -8,14 +8,5 @@
     "country": "USA",
     "state": "American Samoa",
     "city": "Los Angeles",
-    "zip": "99451",
-    "addressLine1": "Hollywood Blvd 1111",
-    "timezone": "UTC",
-    "patientTerritories": [],
-    "careTeam": [
-        {
-            "id": "20eb246e-8099-4c7c-854c-5e0f9a366ddb",
-            "pointOfContact": true
-        }
-    ]
+    "zip": "99451"
 }
