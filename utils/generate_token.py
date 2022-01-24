@@ -6,17 +6,16 @@ generate_token.py
 generated token will generate and store token in token.json.
 """
 
-from __future__ import absolute_import
 import requests
 
 from dotenv import set_key
-from config import ENV, tenantName, apiClientName, SECRET
+from config import Config as C
 
 
 def generate_token():
-    params = {'secret': SECRET}
-    r = requests.post('https://api.%s.welkincloud.io/%s/admin/api_clients/%s' % (ENV, tenantName, apiClientName),
-                      json=params)
+    params = {'secret': C.SECRET}
+    r = requests.post(f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/admin/api_clients/{C.apiClientName}"
+                      , json=params)
     token = r.json().get("token")
     return token
 
