@@ -9,8 +9,27 @@ For a detailed overview of our available API endpoints, please refer to the Welk
 [Welkin V8 Documentation](https://developers.welkinhealth.com/ "Welkin V8 Documentation")
 
 ---
-### Initial Setup
+###  Getting Started
+#### Supported Python Versions
+This library supports the following Python implementations:
 
+-  Python 3.6
+- Python 3.7
+- Python 3.8
+- Python 3.9
+
+Assuming that you have Python and virtualenv installed, set up your environment and install the required dependencies 
+like this or you can install the library using pip:
+
+```
+$ git clone https://github.com/welkincloud-io/sample-apps.git
+$ cd sample-apps
+$ virtualenv venv
+...
+$ . venv/bin/activate
+$ python -m pip install -r requirements.txt
+```
+---
 
 #### Creating API Client
 
