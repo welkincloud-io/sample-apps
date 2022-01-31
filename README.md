@@ -26,15 +26,15 @@ $ cd sample-apps
 ```
 #### Mac/Unix
 ```
-$ virtualenv venv
-$ venv/Scripts/activate
-$ pip install -r requirements.txt
-```
-#### Windows
-```
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ pip3 install -r requirements.txt
+```
+#### Windows
+```
+$ virtualenv venv
+$ venv/Scripts/activate
+$ pip install -r requirements.txt
 ```
 ---
 
