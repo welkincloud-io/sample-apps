@@ -6,6 +6,9 @@ To create a patient using the API, browse to /scripts/ and edit the create_patie
 then run the create_patient.py script. If the patient is already created you can skip this step.
 
 
+![Patient](../docs/static/patient.png)
+Image: Created patient on  Care portal
+
 #### 2. Assigning to a program
 To assign a patient to a program edit the /scripts/assign_to_program.json file then run the assign_to_program.py script, providing the patient ID and program name in the command-line arguments.
 
