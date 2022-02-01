@@ -10,27 +10,28 @@ Options:
   <cdtName>                    : name of the cdt
   <cdtRecordId>                : cdt record id
 Example:
-  python create_cdt.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals fe60ebdb-f7cc-4d44-910c-6f3114befacf
+  python update_cdt_record.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals fe60ebdb-f7cc-4d44-910c-6f3114befacf
 
 """
-from __future__ import absolute_import
-
+import os
+import sys
 import requests
 from docopt import docopt
 import json
-
 from dotenv import get_key
-from config import Config
 
-token = get_key('../.env','WELKIN_API_TOKEN')
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import Config as C
+
+token = get_key('../.env', 'WELKIN_API_TOKEN')
 headers = { "Authorization": "Bearer {}".format(token)}
 
 
 def update_cdt_record(patientId, cdtName, cdtRecordId):
-    data = json.load(open('update_cdt_record.json'))
+    data = json.load(open('CDT/update_cdt_record.json'))
     print('data', data)
-    url = 'https://api.%s.welkincloud.io/%s/%s/patients/%s/cdts/%s/%s' \
-        %(Config.ENV, Config.tenantName, Config.instanceName, patientId, cdtName, cdtRecordId)
+    url =  f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/{C.instanceName}" \
+           f"/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}"
     print('URL',url)
     r = requests.patch(url, headers=headers, json=data)
     if r.ok:
