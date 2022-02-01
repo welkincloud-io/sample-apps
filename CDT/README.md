@@ -21,7 +21,7 @@ Request Body:
 
 Data types of Fields configured:
 
-![CDT](static/CDT_datatype.png)
+![CDT](../docs/static/CDT_datatype.png)
 
 You can add and modify CDT records using our provided scripts.
 ***
