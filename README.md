@@ -9,8 +9,34 @@ For a detailed overview of our available API endpoints, please refer to the Welk
 [Welkin V8 Documentation](https://developers.welkinhealth.com/ "Welkin V8 Documentation")
 
 ---
-### Initial Setup
+###  Getting Started
+#### Supported Python Versions
+This library supports the following Python implementations:
 
+- Python 3.6
+- Python 3.7
+- Python 3.8
+- Python 3.9
+
+Assuming that you have Python and virtualenv installed, set up your environment and install the required dependencies 
+like this or you can install the library using pip:
+```
+$ git clone https://github.com/welkincloud-io/sample-apps.git
+$ cd sample-apps
+```
+#### Mac/Unix
+```
+$ virtualenv -p python3 venv
+$ source venv/bin/activate
+$ pip3 install -r requirements.txt
+```
+#### Windows
+```
+$ virtualenv venv
+$ venv/Scripts/activate
+$ pip install -r requirements.txt
+```
+---
 
 #### Creating API Client
 
@@ -43,9 +69,23 @@ The draft_config.json file should be used in designer 'create draft' configurati
 
 ![draft_config](docs/static/draft_config.jpg)
 
+---
+**Important :**
+After loading draft configuration,  You need to set roles, primary role, policies, region and territories on Admin portal.
+If you  don't have access to Admin portal then you can ask someone  with admin access to set this for you.
+
+On Admin Portal
+1.  API client -> <API-client-name> -> Accesses, Policies, Roles, Territories
+-> Environment -> <Environment-name> -> Edit Client Security
+2.  Users -> <User-Full-name> -> Accesses, Policies, Roles, Territories
+-> Environment -> <Environment-name> -> Edit User Security
+
+Admin Portal
+https://admin.live.welkincloud.io/
+
+---
 Once you finish the steps, there are several variables in the URL structure we need to setup before using the scripts.
 
-`
 **Note: Set API client name, tenant name,
 instance name, secret and environment(stg/live) in config.py file**
 
