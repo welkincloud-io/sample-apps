@@ -3,12 +3,15 @@ Usage:
 Note: please edit config.py file in order to generate token
 
 generate_token.py
-generated token will generate and store token in token.json.
+generated token will be automatically used in header. You need not to copy paste it.
 """
-
+import os
+import sys
 import requests
 
 from dotenv import set_key
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config as C
 
 
