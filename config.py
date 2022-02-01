@@ -3,9 +3,8 @@
 the Welkin V8 API calls. It stores useful information such as your API client name, tenant name,
 instance name, secret and environment(stg/live).
 
-It is suggested that you create a single Config object in
-your project and pass that to the various API calls, rather than create new
-Config objects. This is merely a design suggestion, treat it as such.
+This file holds various configuration options used for all of the examples.
+You will need to change the values below.
 """
 
 
@@ -17,7 +16,8 @@ class Config(object):
     # API Client name
     apiClientName = ""
     SECRET = ""
+
     # Instance (Environment)
     instanceName = ""
-    # stg/live
+       # stg/live
     ENV = ""
