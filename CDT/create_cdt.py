@@ -12,12 +12,14 @@ Options:
 Example:
   python create_cdt.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals
 """
-
+import os
+import sys
 import requests
 from docopt import docopt
 import json
-
 from dotenv import get_key
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config as C
 
 token = get_key('../.env',   'WELKIN_API_TOKEN')
@@ -25,7 +27,7 @@ headers = {"Authorization": "Bearer {}".format(token)}
 
 
 def create_cdt(patientId, cdtName):
-    data = json.load(open('create_cdt.json'))
+    data = json.load(open('patient/create_cdt.json'))
     url = f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/{C.instanceName}/patients/{patientId}/cdts/{cdtName}"
     print('URL', url)
     r = requests.post(url, headers=headers, json=data)
