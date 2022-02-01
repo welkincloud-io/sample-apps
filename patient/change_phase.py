@@ -13,10 +13,14 @@ Example:
   python change_phase.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 prog-sample
 """
 
+import os
+import sys
 import requests
 from docopt import docopt
 import json
 from dotenv import get_key
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config as c
 
 token = get_key('../.env', 'WELKIN_API_TOKEN')
@@ -24,7 +28,7 @@ headers = {"Authorization": "Bearer {}".format(token)}
 
 
 def change_phase(patientId, programName):
-    data = json.load(open('change_phase.json'))
+    data = json.load(open('patient/change_phase.json'))
     url = f'https://api.{c.ENV}.welkincloud.io/{c.tenantName}/{c.instanceName}' \
           f'/patients/{patientId}/programs/{programName}/phases'
 
