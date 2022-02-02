@@ -10,7 +10,7 @@ Options:
   <programName>                    : name of the program
 
 Example:
-  python change_phase.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 prog-sample
+  python3 change_phase.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 prog-sample
 """
 
 import os
