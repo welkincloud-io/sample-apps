@@ -10,7 +10,7 @@ Options:
   <cdtName>                    : name of the cdt
 
 Example:
-  python create_cdt.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals
+  python3 create_cdt.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals
 """
 
 import os
