@@ -10,7 +10,7 @@ Options:
   <patientId>                 : (string) ID of the patient
 
 Example:
-  python update_patient_info.py 14450e16-3d7d-4d2c-b993-384f2f2279e7
+  python3 update_patient_info.py 14450e16-3d7d-4d2c-b993-384f2f2279e7
 """
 import os
 import sys
