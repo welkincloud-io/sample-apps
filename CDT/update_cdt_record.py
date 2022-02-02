@@ -10,7 +10,7 @@ Options:
   <cdtName>                    : name of the cdt
   <cdtRecordId>                : cdt record id
 Example:
-  python update_cdt_record.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals fe60ebdb-f7cc-4d44-910c-6f3114befacf
+  python3 update_cdt_record.py 14450e16-3d7d-4d2c-b993-384f2f2279e7 cdt-vitals fe60ebdb-f7cc-4d44-910c-6f3114befacf
 
 """
 import os
