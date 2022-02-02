@@ -2,7 +2,7 @@
 Usage:
 Note: please edit config.py file in order to generate token
 
-generate_token.py
+python3 generate_token.py
 generated token will be automatically used in header. You need not to copy paste it.
 """
 import os
