@@ -24,15 +24,15 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config as C
 
 token = get_key('../.env', 'WELKIN_API_TOKEN')
-headers = { "Authorization": "Bearer {}".format(token)}
+headers = {"Authorization": "Bearer {}".format(token)}
 
 
 def update_cdt_record(patientId, cdtName, cdtRecordId):
     data = json.load(open('CDT/update_cdt_record.json'))
     print('data', data)
-    url =  f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/{C.instanceName}" \
-           f"/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}"
-    print('URL',url)
+    url = f"https://api.{C.ENV}.welkincloud.io/{C.tenantName}/{C.instanceName}" \
+          f"/patients/{patientId}/cdts/{cdtName}/{cdtRecordId}"
+    print('URL', url)
     r = requests.patch(url, headers=headers, json=data)
     if r.ok:
         print("Updated  CDT record Successfully")
