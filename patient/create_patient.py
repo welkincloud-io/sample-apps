@@ -6,7 +6,7 @@ Usage:
   create_patient.py
 
 Example:
-  python create_patient.py
+  python3 create_patient.py
 """
 
 import os
