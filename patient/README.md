@@ -30,5 +30,4 @@ In the Care Portal, you can see the program and phase in the patient profile und
 
 ![ProgramPhases](../docs/static/Program_phases_UI.png)
 
-### Troubleshooting steps
-...Work in progress
+
