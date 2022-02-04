@@ -220,5 +220,3 @@ In our example it would be:
 | 404 | Not  Found |
 ***
 
-### Troubleshooting steps
-...Work in progress

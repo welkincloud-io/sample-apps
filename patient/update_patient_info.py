@@ -10,13 +10,16 @@ Options:
   <patientId>                 : (string) ID of the patient
 
 Example:
-  python update_patient_info.py 14450e16-3d7d-4d2c-b993-384f2f2279e7
+  python3 update_patient_info.py 14450e16-3d7d-4d2c-b993-384f2f2279e7
 """
-
+import os
+import sys
 import requests
 import json
 from dotenv import get_key
 from docopt import docopt
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config as c
 
 token = get_key('../.env', 'WELKIN_API_TOKEN')
@@ -24,7 +27,7 @@ headers = {"Authorization": "Bearer {}".format(token)}
 
 
 def update_patient_info(patientId):
-    data = json.load(open('update_patient_info.json'))
+    data = json.load(open('patient/update_patient_info.json'))
     url = f'https://api.{c.ENV}.welkincloud.io/{c.tenantName}/{c.instanceName}/patients/{patientId}'
     print(url)
 
