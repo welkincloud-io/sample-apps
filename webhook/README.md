@@ -60,7 +60,7 @@ export default defineComponent({
     await $.respond({
       status: 200,
       headers: {},
-      body: steps['trigger']['event']['body']['id'],
+      body: steps['trigger']['event']['body']['patient_id'],
     })
   },
 })
