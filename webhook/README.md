@@ -65,7 +65,11 @@ export default defineComponent({
   },
 })
 ```
-
+```
+You can accesss method, path, url, headers, body.
+e.g. steps['trigger']['event']['headers'] --> To access header data
+     steps['trigger']['event']['body'] --> To access body data.
+```
 ![pipedream](../docs/static/webhook/deploy.png)
 
 
