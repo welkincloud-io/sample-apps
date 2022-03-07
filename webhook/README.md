@@ -40,23 +40,18 @@ The Cron Scheduler trigger runs your workflow on a schedule.
 steps.trigger.event contains the event that triggered your workflow.
 
 **Copy unique URL to use in script.**
+
 ![pipedream](../docs/static/webhook/Trigger.png)
 
-#### 3. Add an HTTP / Webhook trigger
-Pipedream will launch the workflow builder. 
-For this example, select the HTTP / Webhook Requests trigger.
-![pipedream](../docs/static/webhook/add_trigger1.png)
-
-#### 4. In HTTP response select "Customize when a HTTP request made to this endpoint". Click Continue to accept the settings.
+3. Select "Customize what happens when an HTTP is made to this endpoint URL"
 
 ![pipedream](../docs/static/webhook/trigger_config.png)
 
-#### 5. Test & Deploy
-The logic is all in a Node.js code step, 
+
+![pipedream](../docs/static/webhook/Nodejs_code.png)
+
+Also, this logic is all in a Node.js code step, 
 so you can see how it works and easily customize the code based on your needs using Javascript.
-
-![pipedream](../docs/static/webhook/deploy.png)
-
 ```
 // To return a custom HTTP response, use $.respond() [requires HTTP trigger]
 
@@ -65,13 +60,15 @@ export default defineComponent({
     await $.respond({
       status: 200,
       headers: {},
-      body: steps['trigger']['event']['body']['patient_id'],
+      body: steps['trigger']['event']['body']['id'],
     })
   },
 })
-
-// steps['trigger']['event']['body'] contains request body data.
 ```
+
+![pipedream](../docs/static/webhook/deploy.png)
+
+
 ---
 #### How Pipedream handles JSON payloads
 
@@ -86,24 +83,26 @@ If this is JSON, we correctly recognized the payload as such, and converted even
 In the Inspector, we present event.body cleanly, indenting nested properties, to make the payload easy to read.
 Since event.body is a JavaScript object, it's easy to reference and manipulate properties of the payload using dot-notation.
 
-In workflows, Pipedream saves the raw payload data in a file whose URL 
-you can reference in the variable steps.trigger.event.body.raw_body_url.
+
+In workflows, Pipedream saves the raw payload data in a file whose URL you can reference in the variable steps.trigger.event.body.raw_body_url.
+
 ---
-##### WARNING
+```
+WARNING
 
 The $.respond function is currently only available in Node.js (Javascript) workflow steps.
-
----
+```
 
 #### Errors with HTTP Responses
-If you use $.respond() in a workflow, you must always make sure $.respond() is called in your code. If you make an HTTP request to a workflow, and run code where $.respond() is not called, your endpoint URL will issue a 400 Bad Request error with the following body:
-No $.respond called in workflow
+If you use \$.respond() in a workflow, you must always make sure \$.respond() is called in your code. If you make an HTTP request to a workflow, and run code where \$.respond() is not called, your endpoint URL will issue a 400 Bad Request error with the following body:
+No \$.respond called in workflow
 
 This might happen if:
 
-You call $.respond() conditionally, where it does not run under certain conditions.
-Your workflow throws an Error before you run $.respond().
+You call \$.respond() conditionally, where it does not run under certain conditions.
+Your workflow throws an Error before you run \$.respond().
 You return data in the body property that isn't a string, object, or Buffer.
+
 ---
 
 For More information please refer to [Pipedream Documentation](https://pipedream.com/docs/).
