@@ -1,0 +1,16 @@
+{
+    "startDateTime": "2022-04-13T00:00:00.000Z",
+    "endDateTime": "2020-04-13T23:59:59.000Z",
+    "eventType": "ENCOUNTER",
+    "hostId": "69d7b943-437f-4171-a2f4-3d641c2f589f",
+    "participants": [
+        {
+            "participantId": "69d7b943-437f-4171-a2f4-3d641c2f589f",
+            "participantRole": "r-admin"
+        },
+        {
+            "participantId": "14450e16-3d7d-4d2c-b993-384f2f2279e7",
+            "participantRole": "patient"
+        }
+    ]
+}
