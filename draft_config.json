@@ -2,7 +2,7 @@
 	"securityFormation": {
 		"securityPolicies": [
 			{
-				"id": "e11f3f05-8928-491e-a2ee-468fd796cfb6",
+				"id": "b2782e64-4b22-47f6-8776-fcff52ad5e93",
 				"name": "sp-admin",
 				"description": "",
 				"services": [
@@ -1064,6 +1064,12 @@
 					},
 					{
 						"name": "my_patients"
+					},
+					{
+						"name": "calendar"
+					},
+					{
+						"name": "encounters"
 					}
 				],
 				"_containsPHI": false
@@ -1123,13 +1129,45 @@
 			"userNotification": "un-"
 		}
 	},
+	"patientView": {
+		"visible": [
+			{
+				"name": "GENDER"
+			},
+			{
+				"name": "DATE_OF_BIRTH"
+			},
+			{
+				"name": "CONTACT_INFORMATION"
+			},
+			{
+				"name": "MRN"
+			},
+			{
+				"name": "MARTIAL_STATUS"
+			},
+			{
+				"name": "LOCATION"
+			},
+			{
+				"name": "LANGUAGES"
+			},
+			{
+				"name": "SERVICE_AREA"
+			},
+			{
+				"name": "CARE_TEAM"
+			}
+		],
+		"available": []
+	},
 	"cdts": [
 		{
-			"id": "b6baa6fe-1188-4f5a-a424-9ff744e4394a",
+			"id": "c7ec10c1-05c5-404f-892d-391f05f6a8cc",
 			"name": "__encounter__",
 			"title": null,
 			"label": null,
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": false,
@@ -1264,6 +1302,20 @@
 				},
 				{
 					"name": "templateName",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {}
+				},
+				{
+					"name": "templateTitle",
 					"type": "text",
 					"formula": null,
 					"dictionary": null,
@@ -1584,11 +1636,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "81295a1a-8999-4fdc-b402-c0dfd817f132",
+			"id": "beea1daa-4d34-4259-9c2f-69098ccd79b7",
 			"name": "__encounter_assessment__",
 			"title": null,
 			"label": null,
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": false,
@@ -1847,11 +1899,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "4c60e36e-4da7-4cb9-86f2-75bcdae20d07",
+			"id": "1cb4fc07-e556-40b4-b011-24bef5507e0d",
 			"name": "__encounter_disposition__",
 			"title": null,
 			"label": null,
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": true,
@@ -2068,11 +2120,269 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "435993d1-237e-4367-bc97-69f645bb16a1",
+			"id": "80b3a0e9-014b-40e1-a89b-2b28ccfe0d65",
+			"name": "_asm-general-information",
+			"title": null,
+			"label": "General information",
+			"version": 8,
+			"internal": true,
+			"readable": false,
+			"updatable": false,
+			"type": "MULTI_RECORD",
+			"relation": "ASSESSMENT",
+			"fields": [
+				{
+					"name": "cdt-vitals__cdtf-blood-pressure",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"label": "What is blood pressure readings?",
+						"required": false
+					}
+				},
+				{
+					"name": "cdt-vitals__cdtf-temperature",
+					"type": "float",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"label": "what is temperature?",
+						"required": false
+					}
+				},
+				{
+					"name": "cdt-vitals__cdtf-heart-rate",
+					"type": "integer",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"label": "what is heart rate readings?",
+						"required": false
+					}
+				},
+				{
+					"name": "id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "created_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_at",
+					"type": "datetime",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "updated_by_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_name",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_type",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "source_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": false,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_id",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				},
+				{
+					"name": "external_guid",
+					"type": "text",
+					"formula": null,
+					"dictionary": null,
+					"profileDataType": null,
+					"editable": true,
+					"searchable": false,
+					"bulkEdit": false,
+					"phi": false,
+					"displayType": null,
+					"valueType": null,
+					"meta": {
+						"required": false
+					}
+				}
+			],
+			"_containsPHI": false
+		},
+		{
+			"id": "628c11ec-e049-4517-bab2-a8eeea995a05",
 			"name": "_document_summary",
 			"title": "Document Summary",
 			"label": "Document Summary",
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": false,
 			"updatable": false,
@@ -2330,11 +2640,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "bb6ac9ad-e97a-4803-a0ec-24d91c9baf85",
+			"id": "666d860b-10ae-4e8e-a485-1416389b90ef",
 			"name": "_patient_goal",
 			"title": null,
 			"label": null,
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": false,
 			"updatable": false,
@@ -2654,11 +2964,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "ffd8e55c-79ee-480d-9d8f-67272a883e65",
+			"id": "fb9d4153-795e-47fb-971e-6886522008f2",
 			"name": "_patient_info",
 			"title": "Patient Info",
 			"label": "Patient Info",
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": true,
@@ -2861,11 +3171,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "91e02eba-3749-4a84-a744-585050752369",
+			"id": "df062975-97ed-4394-880e-16d72a1b177b",
 			"name": "cdt-vitals",
 			"title": null,
 			"label": null,
-			"version": 4,
+			"version": 8,
 			"internal": false,
 			"readable": true,
 			"updatable": true,
@@ -3116,11 +3426,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "0d1b8835-9690-43f4-a7ae-d520b6aa0f79",
+			"id": "5834feef-f284-4c27-b172-3d37ec96b73a",
 			"name": "doc-type-assessment",
 			"title": "Assessment",
 			"label": "Assessment",
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": true,
@@ -3339,11 +3649,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "6ed9d034-cf77-413c-a78f-0ddad4af6e4a",
+			"id": "5c1aca18-7c86-460d-aa43-4ef2b7cf7aa8",
 			"name": "doc-type-docusign",
 			"title": "Docusign",
 			"label": "Docusign",
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": true,
@@ -3562,11 +3872,11 @@
 			"_containsPHI": false
 		},
 		{
-			"id": "000a6e57-6bcf-4a42-a4e4-161fdc8e2e3e",
+			"id": "0ae93910-1580-4043-b6a2-9c798b0ac217",
 			"name": "doc-type-others",
 			"title": "Others",
 			"label": "Others",
-			"version": 4,
+			"version": 8,
 			"internal": true,
 			"readable": true,
 			"updatable": true,
@@ -3792,7 +4102,7 @@
 			"name": "__encounter_disposition_ui__",
 			"cdtName": "__encounter_disposition__",
 			"uiComponentType": "UI_ENCOUNTER_DISPOSITION",
-			"version": 4,
+			"version": 8,
 			"data": [
 				{
 					"type": "edit",
@@ -3800,7 +4110,7 @@
 					"grid": [],
 					"typeView": null,
 					"viewSize": null,
-					"gridColumnSize": "MULTIPLE",
+					"gridColumnSize": null,
 					"rowLimit": null,
 					"enabled": true,
 					"fields": []
@@ -3820,14 +4130,14 @@
 			"filter": null,
 			"sort": [],
 			"icon": null,
-			"title": null
+			"title": "  Encounter Disposition Ui  "
 		},
 		{
 			"id": null,
 			"label": null,
 			"name": "pste-program-view",
 			"uiComponentType": "UI_PROGRAM_SUMMARY",
-			"version": 4,
+			"version": 8,
 			"data": [
 				{
 					"type": "add",
@@ -3835,7 +4145,7 @@
 					"grid": [],
 					"typeView": null,
 					"viewSize": null,
-					"gridColumnSize": "MULTIPLE",
+					"gridColumnSize": null,
 					"rowLimit": null,
 					"enabled": true,
 					"fields": []
@@ -3846,7 +4156,7 @@
 					"grid": [],
 					"typeView": null,
 					"viewSize": null,
-					"gridColumnSize": "MULTIPLE",
+					"gridColumnSize": null,
 					"rowLimit": null,
 					"enabled": true,
 					"fields": []
@@ -3866,7 +4176,7 @@
 			"filter": null,
 			"sort": [],
 			"icon": null,
-			"title": null
+			"title": "Pste Program View"
 		},
 		{
 			"id": null,
@@ -3874,7 +4184,7 @@
 			"name": "uicte-vitals",
 			"cdtName": "cdt-vitals",
 			"uiComponentType": "UI_CDT",
-			"version": 4,
+			"version": 8,
 			"data": [
 				{
 					"type": "add",
@@ -3883,22 +4193,25 @@
 						{
 							"name": "cdtf-blood-pressure",
 							"x": 0,
-							"y": 0
+							"y": 0,
+							"size": 4
 						},
 						{
 							"name": "cdtf-heart-rate",
 							"x": 0,
-							"y": 1
+							"y": 1,
+							"size": 4
 						},
 						{
 							"name": "cdtf-temperature",
 							"x": 0,
-							"y": 2
+							"y": 2,
+							"size": 4
 						}
 					],
 					"typeView": null,
 					"viewSize": null,
-					"gridColumnSize": "SINGLE",
+					"gridColumnSize": null,
 					"rowLimit": null,
 					"enabled": true,
 					"fields": [
@@ -3941,22 +4254,25 @@
 						{
 							"name": "cdtf-blood-pressure",
 							"x": 0,
-							"y": 0
+							"y": 0,
+							"size": 4
 						},
 						{
 							"name": "cdtf-heart-rate",
 							"x": 0,
-							"y": 1
+							"y": 1,
+							"size": 4
 						},
 						{
 							"name": "cdtf-temperature",
 							"x": 0,
-							"y": 2
+							"y": 2,
+							"size": 4
 						}
 					],
 					"typeView": null,
 					"viewSize": null,
-					"gridColumnSize": "SINGLE",
+					"gridColumnSize": null,
 					"rowLimit": null,
 					"enabled": true,
 					"fields": [
@@ -3999,17 +4315,20 @@
 						{
 							"name": "cdtf-blood-pressure",
 							"x": 0,
-							"y": 0
+							"y": 0,
+							"size": null
 						},
 						{
 							"name": "cdtf-temperature",
 							"x": 1,
-							"y": 0
+							"y": 0,
+							"size": null
 						},
 						{
 							"name": "cdtf-heart-rate",
 							"x": 2,
-							"y": 0
+							"y": 0,
+							"size": null
 						}
 					],
 					"typeView": "table",
@@ -4056,13 +4375,13 @@
 			},
 			"sort": [],
 			"icon": null,
-			"title": null
+			"title": "Uicte Vitals"
 		}
 	],
 	"patientLayouts": [
 		{
-			"id": "5340b2f0-8ce6-491c-950e-61c76cd63564",
-			"version": 4,
+			"id": "922cb8fe-8b4d-4fe6-8942-a3b3d3f3cf78",
+			"version": 8,
 			"order": 0,
 			"grid": {
 				"additional": [],
@@ -4075,8 +4394,8 @@
 			]
 		},
 		{
-			"id": "cdff077d-343b-4f83-b252-c046d30816b4",
-			"version": 4,
+			"id": "bbbcc024-abbd-48d3-9414-e817b25aa231",
+			"version": 8,
 			"order": 1,
 			"grid": {
 				"additional": [],
@@ -4087,8 +4406,8 @@
 			"roles": []
 		},
 		{
-			"id": "b149586a-c3b8-4680-b753-0310dc912817",
-			"version": 4,
+			"id": "7afc0cb9-9a13-4f1e-afd0-a582ffd744f5",
+			"version": 8,
 			"order": 2,
 			"grid": {
 				"additional": [],
@@ -4099,8 +4418,8 @@
 			"roles": []
 		},
 		{
-			"id": "bef35033-ca19-444b-8576-f1c413513106",
-			"version": 4,
+			"id": "cfdfe6a3-d356-4a37-98e7-ec113cb8d522",
+			"version": 8,
 			"order": 3,
 			"grid": {
 				"additional": [],
@@ -4108,11 +4427,13 @@
 			},
 			"name": "__encounters__",
 			"title": "Encounters",
-			"roles": []
+			"roles": [
+				"r-admin"
+			]
 		},
 		{
-			"id": "8b7f91a9-b850-4e89-aaa1-4f1b9e76d961",
-			"version": 4,
+			"id": "1d6307c1-e0d5-4ce8-8b7b-6ef1d6c16633",
+			"version": 8,
 			"order": 4,
 			"grid": {
 				"additional": [],
@@ -4123,9 +4444,21 @@
 			"roles": []
 		},
 		{
-			"id": "449a5369-28fb-4a9c-a217-a1db72bb0c11",
-			"version": 4,
+			"id": "132f4e9e-a726-4bc9-bfa7-24fa6f61d031",
+			"version": 8,
 			"order": 5,
+			"grid": {
+				"additional": [],
+				"main": []
+			},
+			"name": "__tasks__",
+			"title": "Tasks",
+			"roles": []
+		},
+		{
+			"id": "d2b26c5a-f3ea-49b7-9292-608fc5b81303",
+			"version": 8,
+			"order": 6,
 			"grid": {
 				"additional": [],
 				"main": [
@@ -4154,7 +4487,73 @@
 			]
 		}
 	],
-	"assessments": [],
+	"assessments": [
+		{
+			"id": "1e7bca9d-00c9-4108-96c2-4a6f22e4f4c6",
+			"title": "General information",
+			"name": "asm-general-information",
+			"version": 8,
+			"sections": [
+				{
+					"title": "Section 1",
+					"name": "section-1",
+					"order": 0,
+					"fields": [
+						{
+							"label": "What is blood pressure readings?",
+							"name": "",
+							"refCdtName": "cdt-vitals",
+							"refCdtFieldName": "cdtf-blood-pressure",
+							"order": 0,
+							"viewType": "question",
+							"meta": {
+								"type": "text",
+								"required": false
+							},
+							"prePopulatedValue": null
+						},
+						{
+							"label": "what is temperature?",
+							"name": "",
+							"refCdtName": "cdt-vitals",
+							"refCdtFieldName": "cdtf-temperature",
+							"order": 1,
+							"viewType": "question",
+							"meta": {
+								"type": "float",
+								"required": false
+							},
+							"prePopulatedValue": null
+						},
+						{
+							"label": "what is heart rate readings?",
+							"name": "",
+							"refCdtName": "cdt-vitals",
+							"refCdtFieldName": "cdtf-heart-rate",
+							"order": 2,
+							"viewType": "question",
+							"meta": {
+								"type": "integer",
+								"required": false
+							},
+							"prePopulatedValue": null
+						}
+					]
+				}
+			],
+			"scoring": {
+				"formula": "SUM",
+				"groups": []
+			},
+			"programs": [],
+			"template": null,
+			"conditionSettings": {
+				"elements": [],
+				"events": []
+			},
+			"_containsPHI": false
+		}
+	],
 	"programs": [
 		{
 			"name": "prog-sample",
@@ -4390,7 +4789,7 @@
 	"pdts": [],
 	"therapies": [
 		{
-			"id": "8de1ead1-edff-4e28-ba5a-2fa02ee15cd7",
+			"id": "81d8a905-963a-4581-b5c1-6613a5e73352",
 			"body": {
 				"fields": []
 			}
@@ -4410,18 +4809,6 @@
 					"title": "Sms",
 					"url": null,
 					"icon": "conversation"
-				},
-				{
-					"name": "calendar",
-					"title": "Calendar",
-					"url": null,
-					"icon": "calendar"
-				},
-				{
-					"name": "new_encounter",
-					"title": "New Encounter",
-					"url": null,
-					"icon": "new-encounter"
 				},
 				{
 					"name": "chat",
@@ -4470,9 +4857,28 @@
 					"title": "New Phone Call",
 					"url": null,
 					"icon": "new-phone"
+				},
+				{
+					"name": "sisense",
+					"title": "Sisense",
+					"url": null,
+					"icon": "sisense"
 				}
 			],
-			"visible": []
+			"visible": [
+				{
+					"name": "calendar",
+					"title": "Calendar",
+					"url": null,
+					"icon": "calendar"
+				},
+				{
+					"name": "new_encounter",
+					"title": "New Encounter",
+					"url": null,
+					"icon": "new-encounter"
+				}
+			]
 		}
 	],
 	"customFieldTypes": [],
@@ -4481,7 +4887,20 @@
 	"automationConfigs": [],
 	"customEventSubtypes": [],
 	"docusignFormations": [],
-	"encounterTemplates": [],
+	"encounterTemplates": [
+		{
+			"id": "474ff456-2000-4767-ba61-301c849dd500",
+			"name": "etmp-sample-encounter",
+			"title": "Sample encounter",
+			"encounterDescription": "",
+			"encounterInstruction": "",
+			"encounterColor": "#e67b2d",
+			"type": "etmp-sample-encounter",
+			"assessmentNames": [
+				"asm-general-information"
+			]
+		}
+	],
 	"webhookConfigs": [],
 	"messageTemplates": [
 		{
@@ -4489,7 +4908,7 @@
 			"template": "Hi {{USER_FIRST_NAME}}, you have new notification",
 			"type": "PLAIN_TEXT",
 			"title": "Default notification email template",
-			"subject": null,
+			"subject": "",
 			"messageTypes": [
 				"EMAIL"
 			],
@@ -4504,7 +4923,7 @@
 			"template": "Hi {{USER_FIRST_NAME}}, you have new notification",
 			"type": "PLAIN_TEXT",
 			"title": "Default notification sms template",
-			"subject": null,
+			"subject": "",
 			"messageTypes": [
 				"SMS"
 			],
@@ -4714,6 +5133,61 @@
 			"smsTemplateName": "dn_sms_template",
 			"emailTemplateName": "dn_email_template",
 			"webhookConfigName": null
+		}
+	],
+	"terminologies": [
+		{
+			"id": "379db7e3-dae7-43dc-9e78-8f4bedd3054a",
+			"name": "english",
+			"title": "English",
+			"active": true,
+			"fields": [
+				{
+					"name": "HOME",
+					"singular": "Home",
+					"plural": "Homes"
+				},
+				{
+					"name": "TASK",
+					"singular": "Task",
+					"plural": "Tasks"
+				},
+				{
+					"name": "PATIENT",
+					"singular": "Patient",
+					"plural": "Patients"
+				},
+				{
+					"name": "CALENDAR",
+					"singular": "Calendar",
+					"plural": "Calendars"
+				},
+				{
+					"name": "RELATIONSHIP_THERAPY",
+					"singular": "Relation therapy",
+					"plural": "Relation therapies"
+				},
+				{
+					"name": "ENCOUNTER",
+					"singular": "Encounter",
+					"plural": "Encounters"
+				},
+				{
+					"name": "INSIGHT",
+					"singular": "Insight",
+					"plural": "Insights"
+				},
+				{
+					"name": "UNRECOGNIZED_COMMUNICATION",
+					"singular": "Unrecognized communication",
+					"plural": "Unrecognized communications"
+				},
+				{
+					"name": "PROFILE",
+					"singular": "Profile",
+					"plural": "Profiles"
+				}
+			]
 		}
 	]
 }
